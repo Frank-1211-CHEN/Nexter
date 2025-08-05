@@ -1,0 +1,17 @@
+# 不要上傳 node_modules（npm 安裝的套件）
+node_modules/
+
+# 不要上傳 Sass 編譯後的暫存檔
+.sass-cache/
+
+# 不要上傳 VSCode 設定檔（非必要）
+.vscode/
+
+# macOS 隱藏檔
+.DS_Store
+
+# log 檔
+*.log
+
+# 不要上傳編譯的最終 CSS
+css/style.comp.css
