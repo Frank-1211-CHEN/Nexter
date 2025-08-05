@@ -1,0 +1,46 @@
+.realtors {
+  background-color: $color-secondary;
+  grid-column: col-start 7 / full-end;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  gap: 2rem;
+  // @media only screen and (max-width: $bp-medium) {
+  //   grid-row: 3/4;
+  //   grid-column: 3/-1;
+  //   display: flex;
+  //   justify-content: center;
+  //   justify-items: start;
+  //   height: 100%;
+  //   width: 100%;
+  // }
+  @media only screen and (max-width: $bp-medium) {
+    grid-column: 1/-1;
+    // grid-row: 3/4;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    align-items: center;
+    gap: 3vh 2vh; //vh在視窗變化時有伸縮上的視覺效果
+    color: $color-grey-light-1;
+
+    @media only screen and (max-width: $bp-medium) {
+      // grid-row: 3/4;
+      grid-template-columns: repeat(3, min-content max-content);
+    }
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: min-content max-content;
+    }
+  }
+  &__sold {
+    color: $color-grey-light-2;
+  }
+  &__img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+  }
+}
